@@ -8,7 +8,7 @@ agent any
         
 
         // main SATGES
-        stage ("1st stage : Git checkout PLEAASE"){
+        stage ("1st stage : Git checkout "){
             steps{
         git branch: 'main', 
             url: 'https://github.com/hazem-soussi/devops_test.git'
@@ -57,7 +57,7 @@ agent any
 
           
         
-        stage ("7th stage :Docker image build") {
+        stage ("6th stage :Docker image build") {
             steps {
                 script {
                 sh 'docker image build -t $JOB_NAME:v1.$BUILD_ID .'
