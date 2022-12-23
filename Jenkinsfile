@@ -54,21 +54,7 @@ agent any
             
         }
      
-        // ********************************** 
-        
-       stage ('Quality Gate Status'){
-            steps {
-                script{
-                    withSonarQubeEnv(credentialsId: 'hazem_sonar_ci', installationName: 'sonarqube_server') {
 
-                    }
-                
-                
-                }
-            
-            }
-        }
-        
           
         
         stage ("7th stage :Docker image build") {
@@ -110,16 +96,7 @@ agent any
        } 
     
         
-             //stage("6th stage : packaging & deploy stage ") {
-    //   steps
-        // {
-           // sh "mvn clean -DskipTests package deploy:deploy-file -DgroupId=com.esprit.examen -DartifactId=tpAchatProject -Dversion=1.0.0 -DgeneratePom=true -Dpackaging=war -DrepositoryId=esprit-app -Durl=http://192.168.149.136:8081/repository/maven-releases/ -Dfile=target/tpAchatProject-1.0.0.war"
-      //  }
-//} 
-        
-            
-
-                        
+                
                         
 
     
