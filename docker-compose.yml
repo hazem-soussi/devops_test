@@ -22,10 +22,10 @@ services:
   
   springboot-app:
     #The docker file in BE, build the jar and provides the docker image.
-    image: hazem1998/projet_esprit_cd:latest
+    image: hazem1998/dev_test:latest
     container_name: springboot-app
     environment:
-      SPRING_DATASOURCE_URL: jdbc:mysql://mysql-db:3306/achatdb?createDatabaseIfNotExist=true&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql-db:3306/ecommerceSpring?createDatabaseIfNotExist=true&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
       SPRING_DATASOURCE_USERNAME: admin
       SPRING_DATASOURCE_PASSWORD: admin
       MYSQL_HOST: mysql-db
