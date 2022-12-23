@@ -6,7 +6,7 @@ agent any
         NEXUS_VERSION = "nexus3"
         NEXUS_PROTOCOL = "http"
         NEXUS_URL = "192.168.149.136:8081"
-        NEXUS_REPOSITORY = "achat"
+        NEXUS_REPOSITORY = "devops_test"
         NEXUS_CREDENTIAL_ID = "nexus_auth"
     }
     
